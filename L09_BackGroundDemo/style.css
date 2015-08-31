@@ -1,0 +1,7 @@
+#tb,tr,th,td {
+    border: 1px solid blue;
+}
+
+#tb {
+    border-collapse: collapse;
+}
