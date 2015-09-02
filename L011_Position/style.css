@@ -1,0 +1,26 @@
+#position1 {
+    width: 100px;
+    height: 200px;
+    background-color: blueviolet;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#position2 {
+    width: 100px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+
+#position3 {
+    width: 100px;
+    height: 200px;
+    background-color: orange;
+    position: fixed;
+    left: 20px;
+    top: 40px;
+}
