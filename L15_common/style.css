@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 250px;
+    /*text-align : center;*/
+    background-color: blue;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: gray;
+}
+
+li {
+    display: inline;
+    padding: 3px;
+}
+
+.image {
+    border: 1px solid gray;
+    width: auto;
+    height: auto;
+    /*float: left;*/
+    padding: 5px;
+    display: inline;
+}
+
+.text {
+    font-size: 12px;
+    text-align: center;
+}

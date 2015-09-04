@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div + css 布局</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div {
+        }
+
+        .header {
+            background-color: orange;
+            height: 150px;
+        }
+
+        .atricle {
+            background-color: green;
+            height: 300px;
+            /*/!*为左右两栏留出空间*!/*/
+            /*padding-left: 150px;*/
+            /*padding-right: 150px;*/
+        }
+
+        .footer {
+            background-color: red;
+            height: 150px;
+        }
+
+        /*float:left 跟left right div在同一行，设置宽度 100%，然后设置margin-left:-100%移到上一行左边*/
+        .atricle .left {
+            background-color: blueviolet;
+            width: 150px;
+            float: left;
+            margin-left: -100%;
+            /*position: relative;*/
+            /*left: -150px;*/
+            /*/!*位置为relative 移到距离为-100%的自身*!/*/
+            margin-bottom: -9999px;
+            padding-bottom: 9999px;
+            overflow: hidden;
+        }
+
+        .atricle .middle {
+            background-color: gainsboro;
+            float: left;
+            width: 100%;
+        }
+
+        .atricle .right {
+            background-color: aqua;
+            width: 150px;
+            float: left;
+            margin-left: -150px;
+            margin-bottom: -9999px;
+            padding-bottom: 9999px;
+            overflow: hidden;
+        }
+
+        .inner {
+            /*padding-left: 150px;*/
+            /*padding-right: 150px;*/
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    我是头
+</div>
+<div class="atricle">
+    <div class="middle">
+        <div class="inner">
+            我是中间
+            <p>我是中间</p>
+            <p>我是中间</p>
+            <p>我是中间</p>
+            <p>我是中间</p>
+            <p>我是中间</p>
+            <p>我是中间</p>
+        </div>
+    </div>
+    <div class="left">
+        我是左
+    </div>
+    <div class="right">
+        我是右
+    </div>
+</div>
+<div class="footer">
+    我是尾部 版权所有
+</div>
+</body>
+</html>
